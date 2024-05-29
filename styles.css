@@ -1,0 +1,145 @@
+/* Reset CSS */
+* {
+    margin: 0%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-left: 0px;
+    padding-right: 0px; 
+    background-image: url('https://img.freepik.com/free-photo/surface-with-abstract-watercolor_23-2148733428.jpg?t=st=1716987066~exp=1716990666~hmac=c2be75d20a1a400605ae7c2375797d3532db51543128cbf189fba156710a188f&w=360'); /* Ganti 'background.jpg' dengan URL atau path gambar latar belakang Anda */
+    background-size: 100%; ;
+}
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
+  
+  header{
+    background-color: blueviolet;
+    color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    margin-right: 0px;
+    ;
+  }
+   
+ header h1 {
+    font-size: 50px;
+    font-family: perpetua ;
+    padding: 5px;
+ }
+
+.logo {
+    padding: 0%;
+    vertical-align: left;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background: transparent;
+    top: 0px;
+    left: 0px;
+    width: 275px;
+    height: auto;
+}
+
+div {
+    background-image: none;
+}
+
+div h1 {
+    font-family: garamond ;
+    margin-top: 10px;
+    font-size:40px;
+}
+
+main {
+    padding: 5px;
+}
+
+article {
+    margin-bottom: 10px; 
+    padding: 10px;  
+    border-radius: 4px; 
+}
+
+article h2 {
+    font-size: 30px; 
+    color:#000;
+    margin-bottom: 0%;
+    font-family: tempas sans itc ; 
+}
+
+article div nav {
+    list-style-type: disc;
+}
+
+article div nav ul li {
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+}
+
+article div nav ul {
+    list-style-type: none; 
+    counter-reset: my-counter;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+article div nav ul li::before {
+    content: counter(my-counter) ". "; 
+    counter-increment: my-counter; 
+}
+
+article nav ul {
+    padding: 15px;
+    padding-left: 3%;
+}
+
+article nav p {
+    font-size: 20px;
+}
+
+.tebal {
+    font-weight: bold;
+}
+
+hr {
+    background-color: black;
+    padding: 1px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(29, 29, 190);
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: left;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
